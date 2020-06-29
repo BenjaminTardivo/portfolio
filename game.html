@@ -34,14 +34,17 @@ var config = {
 };
 
 var player;
+
 var stars;
+var redstar;
+
 var bombs;
 var platforms;
 var cursors;
 var score = 0;
 var gameOver = false;
 var scoreText;
-var redstar;
+
 var jumpcount = 0;
 
 
@@ -127,7 +130,8 @@ function create ()
         child.setBounceY(Phaser.Math.FloatBetween(0.2, 0.4));
 
     });
-     redstars.children.iterate(function (child) {
+    
+    redstars.children.iterate(function (child) {
 
         //  Give each star a slightly different bounce
         child.setBounceY(Phaser.Math.FloatBetween(0.1, 0.2));
@@ -148,7 +152,7 @@ function create ()
     //  Checks to see if the player overlaps with any of the stars, if he does call the collectStar function
     this.physics.add.overlap(player, stars, collectStar, null, this);
 
-    this.physics.add.overlap(player, redstars, collectredstar, null, this)
+    this.physics.add.overlap(player, redstars, collectredstar, null, this);
 
     this.physics.add.collider(player, bombs, hitBomb, null, this);
 
@@ -203,9 +207,9 @@ function update ()
 }
 
 
-function collectredstar (player, star)
+function collectredstar (jugador, estrelloroja)
 {
-    star.disableBody(true, true);
+    estrelloroja.disableBody(true, true);
 
     //  Add and update the score
     score += 15;
@@ -226,7 +230,7 @@ function collectredstar (player, star)
 
         });
 
-        var x = (player.x < 400) ? Phaser.Math.Between(400, 800) : Phaser.Math.Between(0, 400);
+        var x = (jugador.x < 400) ? Phaser.Math.Between(400, 800) : Phaser.Math.Between(0, 400);
 
         var bomb = bombs.create(x, 16, 'bomb');
         bomb.setBounce(1);
