@@ -8,197 +8,219 @@
     <title>Portfolio - Benjamin Tardivo</title>
     <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   </head>
-  <body class="body">
-    <section class="hero">
-      <div class="main-width">
-        <header>
-          <div class="logo">
-            <i class="fa-solid fa-gamepad"></i>
-          </div>
 
-          <nav>
-            <div class="hamb">
-              <span></span>
-              <span></span>
-              <span></span>
+
+  <body class="body ">
+
+
+    <nav class="navbar navbar-expand-lg header">
+      <div class="container-fluid">
+        <span class="logo">Portfolio</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <box-icon name='menu' id="menu-icon"></box-icon>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- home section -->
+    <div class="container-fluid section" id="home">
+      
+      <div class="row">
+
+        <div class="home-content col-sm-12 col-12 col-xxl-8 col-lg-8 col-md-8">
+          <h3 class="display-3">Hello! I am</h3>
+          <h1 class="display-1">Benjamin Tardivo</h1>
+          <h3 class="display-3"> And I'm a </h3>
+          <h3 class="display-3"><span class="input"></span></h3>
+          <div class="social-media">
+            <div class="row row-cols-sm-2 row-cols-md-4" id="social-media-row">
+              <div class="col-sm-3 col-3 col-xxl-1 col-lg-2 col-md-2">
+                <a href="https://www.facebook.com/benjamin.tardivo"><i class="bi bi-facebook"></i></a>
+              </div>
+              <div  class="col-sm-3 col-3 col-xxl-1 col-lg-2 col-md-2">
+                <a href="https://x.com/BenjaminTardivo"><i class="bi bi-twitter-x"></i></a>
+              </div>
+              <div  class="col-sm-3 col-3 col-xxl-1 col-lg-2 col-md-2">
+                <a href="https://www.instagram.com/benjamintardivo/" ><i class="bi bi-instagram"></i></a>
+              </div>
+              <div  class="col-sm-3 col-3 col-xxl-1 col-lg-2 col-md-2">
+                <a href="https://www.linkedin.com/in/benjamin-tardivo-8400b5200/"><i class="bi bi-linkedin"></i></a>
+              </div>
             </div>
-
-
-          </nav>
-        </header>
-
-        <div class="container">
-          <div class="hero-text">
-            <h3>I Am</h3>
-            <h2>Benjamin Tardivo</h2>
-            <h1>I Am <span class="input"></span></h1>
-            <div class="social">
-              <a href="https://www.facebook.com/benjamin.tardivo"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://twitter.com/BenjaminTardivo"><i class="fa-brands fa-twitter"></i></a>
-              <a href="https://www.instagram.com/benjamintardivo/"><i class="fa-brands fa-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/benjamin-tardivo-8400b5200/"><i class="fa-brands fa-linkedin-in"></i></a>
-            </div>
           </div>
-        </section>
-
-        <!--About section start-->
-        <section class="About" id="about">
-          <div class="about-img">
-            <img src="images/aboutImg.jpeg">
-          </div>
-
-          <div class="about-text"> 
-            <h2>Acerca de mi</h2>
-            <p>Técnico Universitario en Desarrollo de Videojuegos y Narrativa Interactiva.</p>
-              <p>Especializado en el área de programación con Unity 3D, aunque siempre con el interés de aprender nuevas tecnologías y/o 
-              desarrollarme en otras áreas con el objetivo de formarme como profesional.
-              Intento dar lo mejor de mi en lo que hago y me gusta ver mi trabajo y esfuerzo reflejado en los proyectos en los que participo.</p>
-          </div>
-        </section>
+        </div>
         
-        <!-- Proyect section start -->
-        <section class="Proyect">
-          <div class="container">
-            <h2 class="section-heading">Proyectos</h2>
-            <p>Proyectos de los que participe y sigo participando en el transcurso de mi carrera</p>
-            <div class="all-items">
+        <div class="col-3  main-img">
+          <img src="images\Benjamin.png" class="img-fluid" alt="">
+        </div>
+        
+      </div>
 
-              <div class="single-item">
-                <div class="left">
-                  <div class="image">
-                  <img src="images/No-Te-Contagies.png" alt="#">
-                  </div>
-                </div>
-                <div class="right">
-                  <h2 class="proyect-title">¡No Te Contagies!</h2>
-                  <p class="proyect-description">
-                    Tomando el papel de un niño en edad escolar, intenta no contagiarte del virus del
-                    sarampión, evitando conductas riesgosas y tomando medidas preventivas contra
-                    este. Hecho con el framework Phaser 3 para las plataformas PC y Mobile.
-                  </p>
-                  <div class="button">
-                    <a href="https://benjamintardivo.github.io/No-Te-Contagies/">Pruebalo</a>
-                  </div>
-                </div>
-              </div>
+    </div>
 
-              <div class="single-item">
-                <div class="left">
-                  <div class="image">
-                  <img src="images/KillTheLich.jpeg" alt="#">
-                  </div>
-                </div>
-                <div class="right">
-                  <h2 class="proyect-title">Kill The Litch!</h2>
-                  <p class="proyect-description">
-                    En un mundo habitado por las almas deformadas por un Lich, conviertete en la luz de esperanza para aquellos que aun siguen vivos
-                    y dale un descanso a quienes lo necesitan. Kill the Lich! es un videojuego plataformero metroidvania con tematica medieval fantastica
-                    hecho en Unreal Engine 4 para la plataforma mobile.
-                  </p>
-                </div>
-              </div>
+    <!-- about section -->
+    <div class="container-fluid section" id="about">
+      
+      <div class="row">
+        
+        <h2 class="heading">About <span>Me</span></h2>
+        
+        <div class="about-img col-md-4">
+          <img src="images\aboutImg2.jpeg" class="img-fluid">
+        </div>
+        
+        <div class="about-content col-md-8">
+          <h3>University Technician in Video Game Development and Interactive Narrative.</h3>
+          <p>
+            Hello, I'm Benjamin, I am 23 years old and I am currently in the final stages of my thesis. 
+            My main role is as a Video Game Producer. However, one of my strongest skills is in programming with Unity 3D. 
+            I always have an interest in learning new technologies and developing in other areas with the goal of becoming a well-rounded professional. 
+            I strive to give my best in everything I do, and I am motivated by seeing my work and effort reflected in the projects I participate in. 
+            I enjoy facing challenges and finding solutions that improve the quality of the games I develop.
+          </p>
+          </div>
 
-              <div class="single-item">
-                <div class="left">
-                  <div class="image">
-                  <img src="images/Bot-Box.jpg" alt="#">
-                  </div>
-                </div>
-                <div class="right">
-                  <h2 class="proyect-title">Bot-Box</h2>
-                  <p class="proyect-description">
-                    Bot-Box es un videojuego beat em' up, donde combatimos con nuestro robot Mecha-Mecha contra diferentes enemigos para
-                    evitar que el villano de turno domine el mundo con sus malvados robots. Aun en desarrollo con el motor Unity 3D para la plataforma PC.
-                  </p>
-                </div>
+      </div>
+    </div>
+
+    <!-- portfolio section -->
+    <div class="section portfolio" id="portfolio">
+      <div class="">
+        <h2 class="text-center mb-4 heading">My <span>Projects</span></h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card project-card">
+              <img src="images\No-Te-Contagies.png" class="card-img-top project-image" alt="Project 1">
+              <div class="card-body">
+                <h5 class="card-title">¡No Te Contagies!</h5>
+                <p class="card-text">
+                  Taking on the role of a school-aged child, 
+                  try not to catch the measles virus by avoiding risky behaviors and taking preventive measures against it. 
+                  Made with the Phaser 3 framework for PC and Mobile platforms.
+                </p>
               </div>
+              <a href="https://benjamintardivo.github.io/No-Te-Contagies/" class="portfolio-btn">View Project <i class="bi bi-box-arrow-up-right"></i> </a>
             </div>
           </div>
-        </section>
-
-        <section class="contact">  
-          <div class="container">
-
-            <div class="section-heading">Contacto</div>
-            <div class="row row-cols-5">
-              <div class="col"></div>
-              <div class="phone col">
-                <i class="fa-solid fa-phone"></i>
-                <h4>Telefono</h4>
-                <p>+54 3492 636 195</p>
+          <div class="col-md-4">
+            <div class="card project-card">
+              <img src="images\KillTheLich.jpeg" class="card-img-top project-image" alt="Project 2">
+              <div class="card-body">
+                <h5 class="card-title">Kill The Litch!</h5>
+                <p class="card-text">In a world inhabited by souls deformed by a Lich, 
+                  become the light of hope for those who are still alive and bring rest to those who need it. 
+                  Kill the Lich! is a medieval fantasy-themed metroidvania platformer game made in Unreal Engine 4 for the mobile platform.
+                </p>
               </div>
-              
-              <div class="mail col">
-                <i class="fa-solid fa-envelope"></i>
-                <h4>Mail</h4>
-                <p>benjamintardivo@gmail.com</p>
-              </div>
+              <a href="https://youtu.be/Ajc8rarWcyA" class="portfolio-btn">View Project <i class="bi bi-box-arrow-up-right"></i> </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card project-card">
+              <img src="images\Bot-Box.jpg" class="card-img-top project-image" alt="Project 3">
+              <div class="card-body">
+                <h5 class="card-title">Bot-Box</h5>
+                <p class="card-text">Bot-Box is a beat 'em up video game where we fight with our robot Mecha-Mecha against various enemies
+                   to prevent the villain from taking over the world with his evil robots. 
+                   Currently in development with the Unity 3D engine for the PC platform.</p>
+                  </div>
+                  <a href="#" id="bot-box-link" class="portfolio-btn">View Project <i class="bi bi-box-arrow-up-right"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-              <div class="location col">
-                <i class="fa-solid fa-location-dot"></i>
-                <h4>Ubicacion</h4>
-                <p>Rafaela, Santa Fe, Argentina</p>
-              </div>
 
-              <div class="col"></div>
+
+
+
+    </div>
+
+    <!-- contact section -->
+    
+    <div class="contact section" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="https://formsubmit.co/benjamintardivo@gmail.com" method="POST" >
+
+          <div class="input-box row">
+            <div class="col-md-6 col-sm-12">
+              <input type="text" placeholder="Name" name="Nombre">
+
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <input type="text" placeholder="Mail" name="Correo">
 
             </div>
           </div>
-        </section>
 
-        <footer class="footer">
-          <div class="container">
+          <div class="input-box row">
+            <div class="col-md-6 col-sm-12">
+              <input type="text" placeholder="Phone number" name="Telefono">
 
-            <div class="copy">
-              <p>
-                © Copyright <strong>Benjamin Tardivo</strong>. All Rights Reserved
-              </p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <input type="text" placeholder="Subject" name="Asunto">
+
             </div>
           </div>
-        </footer>
 
+          <textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+          <input type="submit" value="Send" class="button">
+        </form>
+        
+    </div>
 
-    <script type="text/javascript" src="js/script.js"></script>
+    <!-- footer section -->
 
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by Benjamin Tardivo | All Rights Reserved.</p>
+      </div>
+      <div class="footer-top">
+        <a href="#home"><i class='bx bx-arrow-to-top'></i></box-icon></a>
+      </div>
+    </footer>
+
+     <!-- scripts -->
+
+     <!-- Typed -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
       var typed = new Typed(".input", {
-        strings: ["Game Developer.", "Programmer.", "Student."],
+        strings: ["Videogame Developer.", "Programmer.", "Videogame Producer."],
         typeSpeed: 70,
         backSpeed: 60,
         loop: true,
         backDelay: 3000,
       });
     </script>
+
+    <!-- Scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Own -->
+    <script src="js\script.js"></script>
+    
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
   </body>
 </html>
